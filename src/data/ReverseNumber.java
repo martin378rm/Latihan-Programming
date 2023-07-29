@@ -3,7 +3,8 @@ package data;
 public class ReverseNumber {
 
   public static void main(String[] args){
-     int number = 678970;
+      // belum berjalan baik ketika angka terakhir 0
+     int number = 678907;
      int reversedNumber = reverseNumber(number);
       System.out.println("Number: " + number);
       System.out.println("Reversed Number: " + reversedNumber);
@@ -14,7 +15,7 @@ public class ReverseNumber {
           while (num != 0) {
               System.out.println("num 1 :" +num);
               int digit = num % 10;
-              System.out.println("digit: "+digit);
+              System.out.println("digit: " + digit);
               reversed = reversed * 10 + digit;
               System.out.println("reversed : " + reversed);
               num /= 10;
